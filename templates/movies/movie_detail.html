@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="movie-entry">
+    <h2>{{ object.title }}</h2>
+    <p>on {{object.year}}. Hero: {{object.Dhero}}</p>
+  </div>
+  <p><a href="{% url 'movie_edit' movie.pk %}">Edit</a> |
+     <a href="{% url 'movie_delete' movie.pk %}">Delete</a>
+  </p>
+  <p>Back to <a href="{% url 'movie_list' %}">All movies</a>.</p>
+{% endblock content %}

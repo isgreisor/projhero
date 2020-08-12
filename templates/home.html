@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+{% load static %}
+
+{% block content %}
+<div class="jumbotron">
+  <h1 class="display-4"><img class="homecover" src="{% static 'images/donald_duck.png' %}" alt="">Disney Hero Movie App</h1>
+  <p class="lead">Website built with Django.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="{% url 'movie_list' %}" role="button">View All Movies</a>
+  </p>
+</div>
+{% endblock %}

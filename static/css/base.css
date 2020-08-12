@@ -1,0 +1,13 @@
+.lead, .display-4, title, head, body {
+  font-family: 'Great-Vibes', cursive;
+  height:auto;
+}
+
+h1{
+  color: blue;
+}
+
+.homecover {
+  height: 125px;
+  width: auto;
+}
