@@ -8,6 +8,12 @@ h1{
 }
 
 .homecover {
-  height: 125px;
+  background-size: cover;
+  height:125px;
   width: auto;
+}
+.textcenter {
+  text-align: center;
+  font-weigt:500;
+
 }

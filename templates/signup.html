@@ -6,6 +6,8 @@
 
 {% block content %}
 <h2>Sign Up</h2>
+<img class="homecover"
+   src="http://pngimg.com/uploads/goofy/goofy_PNG14.png">
 <form method="post">
   {% csrf_token %}
   {{ form|crispy }}

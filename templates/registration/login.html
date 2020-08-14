@@ -2,6 +2,8 @@
 {% block title %}Log In{% endblock title %}
 {% block content %}
   <h2>Log In</h2>
+  <img  class="homecover"
+    src="http://pngimg.com/uploads/chip_and_dale/chip_and_dale_PNG10.png">
   <form method="post">
     {% csrf_token %}
     {{form.as_p}}

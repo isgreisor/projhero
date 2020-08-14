@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Search{% endblock title %}
+{% load static %}
+{% block content %}
+<h1>Search Results</h1>
+<div class="jumbotron jumbotron-image" id="jumboid">
+  <img class="homecover" src="http://pngimg.com/uploads/donald_duck/donald_duck_PNG85.png">
+{% for movie in object_list %}
+   <div class="textcenter">
+    <h3>{{movie.title}}</h3>
+    <p>Year: {{movie.year}}</p>
+    <p>Disney Hero: {{movie.Dhero}}</p>
+    </div>
+{%endfor%}
+</div>
+{% endblock content %}

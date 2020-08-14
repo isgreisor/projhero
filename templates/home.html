@@ -1,14 +1,19 @@
 {% extends 'base.html' %}
-
-{% block title %}Home{% endblock title %}
 {% load static %}
+{% block title %}Home{% endblock title %}
 
 {% block content %}
+
 <div class="jumbotron">
   <h1 class="display-4"><img class="homecover" src="{% static 'images/donald_duck.png' %}" alt="">Disney Hero Movie App</h1>
   <p class="lead">Website built with Django.</p>
   <p class="lead">
     <a class="btn btn-primary btn-lg" href="{% url 'movie_list' %}" role="button">View All Movies</a>
   </p>
-</div>
+  <form class="form-inline mt-2 mt-md-0" action="{% url 'search_results'%}" method="GET">
+    <input name="q" class="form-control mr-sm-2"
+      type="text" placeholder="Search" aria-label="Search">
+    <button type="submit" class="btn btn-primary btn-sm">Search</button>
+</form>
+ </div>
 {% endblock %}
