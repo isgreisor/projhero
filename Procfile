@@ -1,1 +1,1 @@
-web: gunicorn  projhero.wsgi --log-file -
+web: gunicorn projhero.wsgi
